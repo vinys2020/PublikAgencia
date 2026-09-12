@@ -4,9 +4,14 @@ import {
   ArrowRight,
 } from 'lucide-react'
 
+
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Servicios from "../components/Servicios"
+import Proyectos from "../components/Proyectos"
+import ParedGaleria from "../components/ParedGaleria"
+import ParedReels from "../components/ParedReels"
 
 
 function Home() {
@@ -197,480 +202,240 @@ function Home() {
   </div>
 </section>
 
-{/* SERVICES */}
+<Servicios />
+
+{/* QUIÉNES SOMOS */}
 <section
-  id="servicios"
-  className="relative overflow-hidden border-t border-white/10"
+  id="nosotros"
+  className="relative overflow-hidden bg-white text-black"
 >
   <div className="mx-auto max-w-7xl px-6 py-32 lg:px-12 lg:py-40">
 
-    {/* HEADER */}
-    <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+    {/* ENCABEZADO */}
+    <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
 
       <div>
-        <span className="text-xs uppercase tracking-[0.3em] text-[#ff3cac]">
-          Lo que hacemos
+        <span className="text-xs font-medium uppercase tracking-[0.3em] text-[#ff3cac]">
+          Quiénes somos
         </span>
 
-        <h2 className="mt-6 max-w-md text-4xl font-semibold leading-[1.05] tracking-[-0.05em] sm:text-5xl">
-          Una idea.
+        <h2 className="mt-8 max-w-5xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] sm:text-7xl lg:text-8xl">
+          Creamos
           <br />
-          <span className="text-white/30">
-            Muchas posibilidades.
-          </span>
+          <span className="text-black/30">cosas que funcionan.</span>
         </h2>
       </div>
 
-      <div className="flex items-end">
-        <p className="max-w-lg text-sm leading-7 text-white/40 sm:text-base">
-          Combinamos tecnología, creatividad y estrategia para crear
-          soluciones que realmente tengan sentido para cada proyecto.
+      <div className="max-w-xs pt-2 lg:pt-16">
+        <p className="text-sm leading-relaxed text-black/55">
+          Somos Publik, un estudio de software y contenido digital que
+          transforma ideas en soluciones reales.
         </p>
       </div>
 
     </div>
 
+    {/* SEPARADOR */}
+    <div className="my-20 h-px w-full bg-black/10" />
 
-    {/* SERVICES GRID */}
-    <div className="mt-20 grid gap-x-8 gap-y-20 md:grid-cols-2">
+    {/* CONTENIDO */}
+    <div className="grid gap-16 lg:grid-cols-12 lg:gap-10">
 
-      {/* 01 */}
-      <article className="group">
+      {/* TEXTO PRINCIPAL */}
+      <div className="lg:col-span-7">
 
-        <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909]">
+        <p className="max-w-4xl text-2xl font-medium leading-[1.15] tracking-[-0.03em] sm:text-4xl">
+          En Publik desarrollamos soluciones digitales y contenido
+          audiovisual para potenciar marcas y negocios.
+        </p>
 
-          <video
-            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-          >
-            {/* COLOCÁ ACÁ LA RUTA DE TU VIDEO */}
-            <source
-              src="/videos/software_1.mp4"
-              type="video/mp4"
-            />
-          </video>
+        <p className="mt-8 max-w-2xl text-base leading-relaxed text-black/55 sm:text-lg">
+          Nos gusta involucrarnos en cada proyecto, entender cómo funciona
+          cada negocio y encontrar la mejor manera de llevar sus ideas a
+          lo digital.
+        </p>
 
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+      </div>
 
-          <div className="absolute left-5 top-5">
-            <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/50 backdrop-blur-md">
-              01
-            </span>
-          </div>
+{/* IDENTIDAD */}
 
-        </div>
+<div className="lg:col-span-5 lg:flex lg:justify-end">
 
-        <div className="mt-6 flex items-start justify-between gap-6">
-
-          <div>
-            <h3 className="text-xl font-medium">
-              Desarrollo de software
-            </h3>
-
-            <p className="mt-3 max-w-lg text-sm leading-6 text-white/35">
-              Sistemas y herramientas digitales pensadas para la forma
-              de trabajar de cada negocio.
-            </p>
-          </div>
-
-          <ArrowRight
-            size={18}
-            className="mt-1 shrink-0 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#ff3cac]"
-          />
-
-        </div>
-
-      </article>
+  <div className="w-full max-w-sm">
 
 
-      {/* 02 */}
-      <article className="group">
+<div className="border-t border-black/10 py-6">
+  <div className="flex items-center justify-between">
+    <span className="text-xs uppercase tracking-[0.2em] text-black/40">
+      Nuestra mirada
+    </span>
 
-        <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909]">
+    <span className="text-sm text-black/30">
+      01
+    </span>
+  </div>
 
-          <video
-            className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-          >
-            {/* COLOCÁ ACÁ LA RUTA DE TU VIDEO */}
-            <source
-              src="/videos/publik (9).mp4"
-              type="video/mp4"
-            />
-          </video>
+  <p className="mt-4 text-lg font-medium leading-snug tracking-tight">
+    Primero entendemos el proyecto y después pensamos cómo llevarlo adelante.
+  </p>
+</div>
 
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+<div className="border-t border-black/10 py-6">
+  <div className="flex items-center justify-between">
+    <span className="text-xs uppercase tracking-[0.2em] text-black/40">
+      Nuestra forma
+    </span>
 
-          <div className="absolute left-5 top-5">
-            <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/50 backdrop-blur-md">
-              02
-            </span>
-          </div>
+    <span className="text-sm text-black/30">
+      02
+    </span>
+  </div>
 
-        </div>
+  <p className="mt-4 text-lg font-medium leading-snug tracking-tight">
+    Nos metemos de lleno en cada proyecto y prestamos atención a los detalles.
+  </p>
+</div>
 
-        <div className="mt-6 flex items-start justify-between gap-6">
+<div className="border-y border-black/10 py-6">
+  <div className="flex items-center justify-between">
+    <span className="text-xs uppercase tracking-[0.2em] text-black/40">
+      Lo que buscamos
+    </span>
 
-          <div>
-            <h3 className="text-xl font-medium">
-              Desarrollo web
-            </h3>
+    <span className="text-sm text-black/30">
+      03
+    </span>
+  </div>
 
-            <p className="mt-3 max-w-lg text-sm leading-6 text-white/35">
-              Sitios web modernos, rápidos y diseñados para comunicar
-              y generar resultados.
-            </p>
-          </div>
-
-          <ArrowRight
-            size={18}
-            className="mt-1 shrink-0 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#ff3cac]"
-          />
-
-        </div>
-
-      </article>
+  <p className="mt-4 text-lg font-medium leading-snug tracking-tight">
+    Que cada idea tenga un sentido y que el resultado realmente sirva.
+  </p>
+</div>
 
 
-      {/* 03 */}
-      {/* 03 */}
-<article className="group">
+  </div>
 
-  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909]">
+</div>
 
-    <video
-      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-    >
-      <source
-        src="/videos/publik (2).mp4"
-        type="video/mp4"
-      />
-    </video>
 
-    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+    </div>
 
-    <div className="absolute left-5 top-5">
-      <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/50 backdrop-blur-md">
-        03
+    {/* FRASE FINAL */}
+    <div className="mt-32 overflow-hidden">
+
+      <p className="text-[clamp(3rem,8vw,8rem)] font-semibold leading-[0.85] tracking-[-0.07em]">
+        Ideas
+        <span className="text-[#ff3cac]">.</span>
+        <br />
+        Código
+        <span className="text-black/20">.</span>
+        <br />
+        Contenido
+        <span className="text-black/20">.</span>
+      </p>
+
+    </div>
+
+  </div>
+
+  {/* DETALLE DECORATIVO */}
+  <div className="pointer-events-none absolute -right-32 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-[#ff3cac]/10 blur-3xl" />
+
+</section>
+
+<Proyectos />
+
+{/* PRODUCCIÓN VISUAL */}
+
+<section
+  id="contenido"
+  className="relative overflow-hidden bg-[#050505] text-white"
+>
+  {/* FONDO */}
+  <div className="pointer-events-none absolute inset-0">
+
+<div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-[#ff3cac]/[0.07] blur-[140px]" />
+
+<div
+  className="
+    absolute
+    inset-0
+    opacity-[0.035]
+    [background-image:linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)]
+    [background-size:80px_80px]
+  "
+/>
+
+
+  </div>
+
+  <div className="relative mx-auto max-w-7xl px-6 py-32 lg:px-12 lg:py-40">
+
+
+{/* ========================================= */}
+{/* ENCABEZADO */}
+{/* ========================================= */}
+
+<div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-end">
+
+  <div>
+
+    <span className="text-xs font-medium uppercase tracking-[0.3em] text-[#ff3cac]">
+      Producción visual
+    </span>
+
+    <h2 className="mt-7 max-w-5xl text-5xl font-semibold leading-[0.9] tracking-[-0.065em] sm:text-7xl lg:text-8xl">
+      Lo que hacemos,
+      <br />
+      <span className="text-white/25">
+        también se ve.
       </span>
-    </div>
+    </h2>
 
   </div>
 
-  <div className="mt-6 flex items-start justify-between gap-6">
 
-    <div>
-      <h3 className="text-xl font-medium">
-        Marketing digital
-      </h3>
+  <p className="max-w-sm text-sm leading-relaxed text-white/45 lg:pb-2 lg:text-right">
+    Fotos, videos y contenido creado para marcas que quieren mostrar lo
+    que hacen de una manera distinta.
+  </p>
 
-      <p className="mt-3 max-w-lg text-sm leading-6 text-white/35">
-        Estrategias y campañas para conectar marcas con las
-        personas correctas.
-      </p>
-    </div>
+</div>
 
-    <ArrowRight
-      size={18}
-      className="mt-1 shrink-0 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#ff3cac]"
-    />
 
-  </div>
+{/* SEPARADOR */}
 
-</article>
+<div className="my-20 h-px w-full bg-white/10 lg:my-28" />
 
 
-      {/* 04 */}
-<article className="group">
-
-  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909] p-1">
+<ParedGaleria />
 
-    <div className="relative h-full w-full overflow-hidden rounded-[14px]">
 
-      <video
-        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      >
-        <source
-          src="/videos/publik (10).mp4"
-          type="video/mp4"
-        />
-      </video>
+<ParedReels />
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
-      <div className="absolute left-5 top-5">
-        <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/50 backdrop-blur-md">
-          04
-        </span>
-      </div>
+{/* ========================================= */}
+{/* CIERRE */}
+{/* ========================================= */}
 
-    </div>
+<div className="mt-32 flex flex-col justify-between gap-8 border-t border-white/10 pt-8 lg:mt-48 sm:flex-row sm:items-end">
 
-  </div>
+  <p className="max-w-xl text-lg font-medium leading-snug tracking-tight text-white/80 sm:text-2xl">
+    No se trata solamente de sacar una foto o grabar un video.
+    Se trata de encontrar la forma de mostrar una marca.
+  </p>
 
-  <div className="mt-6 flex items-start justify-between gap-6">
+  <span className="text-xs uppercase tracking-[0.25em] text-white/30">
+    Publik / Producción visual
+  </span>
 
-    <div>
-      <h3 className="text-xl font-medium">
-        Producción audiovisual
-      </h3>
+</div>
 
-      <p className="mt-3 max-w-lg text-sm leading-6 text-white/35">
-        Contenido fotográfico y audiovisual pensado para
-        comunicar de manera diferente.
-      </p>
-    </div>
-
-    <ArrowRight
-      size={18}
-      className="mt-1 shrink-0 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#ff3cac]"
-    />
-
-  </div>
-
-</article>
-
-
-{/* 05 */}
-<article className="group">
-
-  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909]">
-
-    <video
-      className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-      autoPlay
-      muted
-      loop
-      playsInline
-      preload="metadata"
-    >
-      <source
-        src="/videos/publik (11).mp4"
-        type="video/mp4"
-      />
-    </video>
-
-    <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-
-    <div className="absolute left-5 top-5">
-      <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/50 backdrop-blur-md">
-        05
-      </span>
-    </div>
-
-  </div>
-
-  <div className="mt-6 flex items-start justify-between gap-6">
-
-    <div>
-      <h3 className="text-xl font-medium">
-        Diseño gráfico
-      </h3>
-
-      <p className="mt-3 max-w-lg text-sm leading-6 text-white/35">
-        Identidad visual, piezas gráficas y recursos que construyen
-        una marca consistente.
-      </p>
-    </div>
-
-    <ArrowRight
-      size={18}
-      className="mt-1 shrink-0 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#ff3cac]"
-    />
-
-  </div>
-
-</article>
-
-
-      {/* 06 */}
-      <article className="group">
-
-  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909] p-1">
-
-    <div className="relative h-full w-full overflow-hidden rounded-[14px]">
-
-      <video
-        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      >
-        <source
-          src="/videos/publik (7).mp4"
-          type="video/mp4"
-        />
-      </video>
-
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-
-      <div className="absolute left-5 top-5">
-        <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/50 backdrop-blur-md">
-          06
-        </span>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div className="mt-6 flex items-start justify-between gap-6">
-
-    <div>
-      <h3 className="text-xl font-medium">
-        Publicidad
-      </h3>
-
-      <p className="mt-3 max-w-lg text-sm leading-6 text-white/35">
-        Campañas digitales enfocadas en visibilidad, alcance
-        y crecimiento.
-      </p>
-    </div>
-
-    <ArrowRight
-      size={18}
-      className="mt-1 shrink-0 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#ff3cac]"
-    />
-
-  </div>
-
-</article>
-
-{/* 07 */}
-<article className="group">
-
-  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909] p-1">
-
-    <div className="relative h-full w-full overflow-hidden rounded-[14px]">
-
-      <video
-        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      >
-        <source
-          src="/videos/publik (6).mp4"
-          type="video/mp4"
-        />
-      </video>
-
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-
-      <div className="absolute left-5 top-5">
-        <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/50 backdrop-blur-md">
-          07
-        </span>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div className="mt-6 flex items-start justify-between gap-6">
-
-    <div>
-      <h3 className="text-xl font-medium">
-        Branding
-      </h3>
-
-      <p className="mt-3 max-w-lg text-sm leading-6 text-white/35">
-        Creamos identidades visuales que representan la esencia
-        de una marca y la hacen reconocible.
-      </p>
-    </div>
-
-    <ArrowRight
-      size={18}
-      className="mt-1 shrink-0 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#ff3cac]"
-    />
-
-  </div>
-
-</article>
-
-
-{/* 08 */}
-<article className="group">
-
-  <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909] p-1">
-
-    <div className="relative h-full w-full overflow-hidden rounded-[14px]">
-
-      <video
-        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="metadata"
-      >
-        <source
-          src="/videos/movilapp.mp4"
-          type="video/mp4"
-        />
-      </video>
-
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-
-      <div className="absolute left-5 top-5">
-        <span className="rounded-full border border-white/10 bg-black/40 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-white/50 backdrop-blur-md">
-          08
-        </span>
-      </div>
-
-    </div>
-
-  </div>
-
-  <div className="mt-6 flex items-start justify-between gap-6">
-
-    <div>
-      <h3 className="text-xl font-medium">
-        Aplicaciones móviles
-      </h3>
-
-      <p className="mt-3 max-w-lg text-sm leading-6 text-white/35">
-        Diseñamos y desarrollamos aplicaciones móviles pensadas
-        para ofrecer experiencias simples y funcionales.
-      </p>
-    </div>
-
-    <ArrowRight
-      size={18}
-      className="mt-1 shrink-0 text-white/25 transition-all duration-300 group-hover:translate-x-1 group-hover:text-[#ff3cac]"
-    />
-
-  </div>
-
-</article>
-
-    </div>
 
   </div>
 </section>
+
+
 
       {/* DIFFERENTIAL */}
       <section
@@ -731,105 +496,7 @@ function Home() {
         </div>
       </section>
 
-      {/* PROJECTS */}
-      <section
-        id="proyectos"
-        className="mx-auto max-w-7xl px-6 py-32 lg:px-12"
-      >
-        <div className="flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
-          <div>
-            <span className="text-xs uppercase tracking-[0.3em] text-[#ff3cac]">
-              Proyectos
-            </span>
-
-            <h2 className="mt-6 text-4xl font-semibold tracking-[-0.05em] sm:text-6xl">
-              Trabajo que
-              <br />
-              <span className="text-white/30">habla por nosotros.</span>
-            </h2>
-          </div>
-
-          <a
-            href="#contacto"
-            className="group flex items-center gap-3 text-sm text-white/50 transition-colors hover:text-white"
-          >
-            Ver todos los proyectos
-
-            <ArrowRight
-              size={16}
-              className="transition-transform group-hover:translate-x-1"
-            />
-          </a>
-        </div>
-
-        <div className="mt-16 grid gap-6 lg:grid-cols-2">
-          {/* Project 1 */}
-          <article className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-[#0b0b0b]">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#ff3cac]/20 via-transparent to-[#7c3aed]/10 transition-transform duration-700 group-hover:scale-105" />
-
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-5xl font-bold tracking-[-0.08em]">
-                  LIRA<span className="text-[#ff3cac]">.</span>
-                </div>
-
-                <p className="mt-3 text-xs uppercase tracking-[0.25em] text-white/30">
-                  Sistema inmobiliario
-                </p>
-              </div>
-            </div>
-
-            <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between p-6">
-              <div>
-                <span className="text-xs uppercase tracking-[0.2em] text-[#ff3cac]">
-                  Software
-                </span>
-
-                <h3 className="mt-2 text-xl font-medium">
-                  Lira Inmobiliaria
-                </h3>
-              </div>
-
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/30 backdrop-blur-sm">
-                <ArrowRight size={16} />
-              </div>
-            </div>
-          </article>
-
-          {/* Project 2 */}
-          <article className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-[#0b0b0b]">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#7c3aed]/15 via-transparent to-[#ff3cac]/10 transition-transform duration-700 group-hover:scale-105" />
-
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-5xl font-bold tracking-[-0.08em]">
-                  PUBLIK<span className="text-[#ff3cac]">.</span>
-                </div>
-
-                <p className="mt-3 text-xs uppercase tracking-[0.25em] text-white/30">
-                  Desarrollo web
-                </p>
-              </div>
-            </div>
-
-            <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between p-6">
-              <div>
-                <span className="text-xs uppercase tracking-[0.2em] text-[#ff3cac]">
-                  Web
-                </span>
-
-                <h3 className="mt-2 text-xl font-medium">
-                  Experiencias digitales
-                </h3>
-              </div>
-
-              <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/30 backdrop-blur-sm">
-                <ArrowRight size={16} />
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
+      
 
       {/* CTA */}
       <section
