@@ -67,7 +67,7 @@ const ParedReels = () => {
                   preload="metadata"
                 >
                   <source
-                    src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789243817/jie9lepkdtzqes3idhrp.mp4"
+                    src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789256423/uhqcqijp56ymoehdtx7q.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -484,7 +484,7 @@ const ParedReels = () => {
                   preload="metadata"
                 >
                   <source
-                    src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789248820/ltgijjhhx32d4stn9fz1.mp4"
+                    src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789255972/hl4jxi8mjs0r9hwgebie.mp4"
                     type="video/mp4"
                   />
                 </video>
