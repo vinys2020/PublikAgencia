@@ -53,7 +53,7 @@ const Servicios = () => {
               >
                 {/* COLOCÁ ACÁ LA RUTA DE TU VIDEO */}
                 <source
-                  src="/videos/software_1.mp4"
+                  src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789483147/wwryymki1ihieb6lp5zo.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -106,7 +106,7 @@ const Servicios = () => {
               >
                 {/* COLOCÁ ACÁ LA RUTA DE TU VIDEO */}
                 <source
-                  src="/videos/publik (9).mp4"
+                  src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789482840/lsyaugaoouvib8836fcx.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -144,8 +144,7 @@ const Servicios = () => {
           </article>
 
 
-          {/* 03 */}
-          {/* 03 */}
+
           <article className="group">
 
             <div className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/10 bg-[#090909]">
@@ -159,7 +158,7 @@ const Servicios = () => {
                 preload="metadata"
               >
                 <source
-                  src="/videos/publik (2).mp4"
+                  src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789482838/mlspyyfjzrgleb2ouigq.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -213,7 +212,7 @@ const Servicios = () => {
                   preload="metadata"
                 >
                   <source
-                    src="/videos/publik (10).mp4"
+                    src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789482841/o2hjvfcc4jmf9t0gfimd.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -267,7 +266,7 @@ const Servicios = () => {
                 preload="metadata"
               >
                 <source
-                  src="/videos/publik (11).mp4"
+                  src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789482840/m4gavhbqsa85lufhqkzn.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -321,7 +320,7 @@ const Servicios = () => {
                   preload="metadata"
                 >
                   <source
-                    src="/videos/publik (7).mp4"
+                    src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789482840/umduhqesqithoqoclxdw.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -377,7 +376,7 @@ const Servicios = () => {
                   preload="metadata"
                 >
                   <source
-                    src="/videos/publik (6).mp4"
+                    src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789482840/nrxeuvhmnx8fe0wobrzq.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -433,7 +432,7 @@ const Servicios = () => {
                   preload="metadata"
                 >
                   <source
-                    src="/videos/movilapp.mp4"
+                    src="https://res.cloudinary.com/dcggcw8df/video/upload/v1789482816/l9csd0mzymwmwu3ylje4.mp4"
                     type="video/mp4"
                   />
                 </video>
